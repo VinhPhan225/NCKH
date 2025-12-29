@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gợi ý thực đơn</title>
+  </head>
+  <body>
+    <h2>Ứng dụng gợi ý thực đơn</h2>
+
+    <input id="weight" placeholder="Cân nặng (kg)" />
+    <input id="height" placeholder="Chiều cao (cm)" />
+    <input id="age" placeholder="Tuổi" />
+
+    <select id="goal">
+      <option value="lose">Giảm cân</option>
+      <option value="maintain">Duy trì</option>
+    </select>
+
+    <button onclick="getMeal()">Gợi ý thực đơn</button>
+    <p id="result"></p>
+
+    <h3>Trợ lý ảo</h3>
+    <input id="question" placeholder="Hôm nay ăn gì?" />
+    <button onclick="askAssistant()">Hỏi</button>
+    <p id="answer"></p>
+
+    <script src="app.js"></script>
+  </body>
+</html>
